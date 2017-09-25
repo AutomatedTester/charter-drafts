@@ -61,7 +61,7 @@
   <h1 id="title">Browser Testing and Tools Working Group Charter</h1>
   <p class="mission">The <strong>mission</strong> of the
 <a href="https://www.w3.org/testing/browser/">Browser Testing and Tools Working Group</a>
-is to produce technologies for automating testing of Web applications
+is to produce technologies for automating and debugging of Web applications
 running in browsers.
 
 <!--
@@ -77,7 +77,7 @@ running in browsers.
           Start date
         </th>
         <td>
-          …
+          01 October 2017
         </td>
       </tr>
       <tr id="Duration">
@@ -85,7 +85,7 @@ running in browsers.
           End date
         </th>
         <td>
-          31 March 2017
+          30 September 2018
         </td>
       </tr>
 
@@ -123,10 +123,20 @@ scheduled by consent of the participants, no more than 3 per year.
   <section id="scope" class="scope">
     <h2>Scope</h2>
 
+    <h3>APIs for use in automated testing of Web applications</h3>
+
     <p>The scope of the Browser Testing and Tools Working Group
     includes APIs for the purpose of automating testing of Web applications
     running in browsers—for example, to simulate user actions such as
     clicking links, entering text, and submitting forms.
+
+    <h3>APIs for use in troubleshooting and debugging of Web applications</h3>
+    <p>For the purpose of troubleshooting and debugging Web applications,
+      many Web browsers provide either a built-in set of “developer tools”.
+
+    <p>The Browser Testing and Tools Working Group will produce a specification
+      for a Remote Debug Protocol, as well as consider any other potential APIs
+      useful in performing troubleshooting and debugging of Web applications.
 
     <div>
       <h3>Success Criteria</h3>
@@ -149,7 +159,7 @@ end users.</p>
         The working group will deliver the following W3C normative specification:
       </p>
       <dl>
-        <dt id="webdriver" class="spec"><a href="https://w3c.github.io/webdriver/webdriver-spec.html">Web Driver API</a></dt>
+        <dt id="webdriver" class="spec"><a href="https://w3c.github.io/webdriver/webdriver-spec.html">Web Driver API Level 2</a></dt>
       <dd>
 <p>
 Provides methods that allow automated simulation of user actions, such as
@@ -157,30 +167,16 @@ clicking links, entering text, and submitting forms.
       </dd>
       <dd>
 <p>
-      <b>Expected completion:</b> 24 October 2016
+      <b>Expected completion:</b> 30 September 2018
       </dd>
+      <dt id="remote_debug" class=spec><a href="#">Remote Debug Protocol Level 1</a></dt>
+      <dd><p>Provides methods that allow the debugging of web applications, from
+      any number of IDEs.
+      </dd>
+      <dd><b>Expected completion:</b> 30 September 2018</dd>
       </dl>
     </div>
 
-    <div id="ig-other-deliverables">
-      <h3>
-        Other Deliverables
-      </h3>
-      <p>
-        Other non-normative documents may be created such as:
-      </p>
-      <p>The Browser Testing and Tools Working Group will also produce
-a test suite and implementation report for the WebDriver specification. It
-is expected that the implementation report will include results for
-implementation of the WebDriver API in at least four different browser
-engines:
-<ul>
-<li>Mozilla Gecko
-<li>Mozilla Servo
-<li>Google Blink
-<li>Microsoft Edge
-</ul>
-    </div>
   </section>
 
   <section id="coordination">
@@ -229,7 +225,8 @@ engines:
 <a href="mailto:public-browser-tools-testing@w3.org">public-browser-tools-testing@w3.org</a>
       (<a
       href="http://lists.w3.org/Archives/Public/public-browser-tools-testing/">archive</a>)
-<li>the <code>#webdriver</code> IRC channel on <code>irc.w3.org</code>.
+<li>the <code>#webdriver</code> IRC channel on <code>irc.w3.org</code> for webdriver
+  related topics or <code>#testing</code> for remote debug protocol related topics.
 </ul>
       The public is invited to post messages to that mailing list and
       to participate in discussions on that IRC channel.
@@ -361,16 +358,30 @@ teleconferences on an as-needed basis.
           </tr>
           <tr>
             <th>
-              <a  href="">Rehartered</a>
+              <a  href="">Rechartered</a>
             </th>
             <td>
-              <i >…</i>
+              <i>31 March 2017</i>
             </td>
             <td>
-              <i >31 March 2017</i>
+              <i>30 September 2017</i>
             </td>
             <td>
               <i >No changes in scope or deliverables.</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <a href="">Rechartered</a>
+            </th>
+            <td>
+              <i>1 October 2017</i>
+            </td>
+            <td>
+              <i>30 September 2018</i>
+            </td>
+            <td>
+              <i>Added WebDriver Level 2 and Remote Debug Protocol Level 1</i>
             </td>
           </tr>
         </tbody>
